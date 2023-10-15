@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.drag-select-box {
+  position: absolute;
+  /* background-color: #2196F3; */
+  border: 2px dotted black;
+  opacity: 0.4;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +38,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
